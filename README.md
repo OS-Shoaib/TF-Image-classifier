@@ -4,7 +4,7 @@
 
 In the project I've used Deep Learning to train image classifier to categorize images.
 
-I've trained and tested it on a dataset of flowers as part of my graduation from [Udacity](https://www.udacity.com/) `Intro to machine Learning using PyTorch`.
+I've trained and tested it on a dataset of flowers as part of my graduation from [Udacity](https://www.udacity.com/) `Intro to machine Learning using TensorFlow`.
 One of the model applications could be that you point your smartphone on a flower and phone app will tell you what flower it is.
 However, the model can be retrained on any dataset of your choice. You can learn it to recognize cars, point your picture on the car, and let the application to tell you what the make and model it is.
 
@@ -37,8 +37,8 @@ Python 3
 
 - pandas
 - numpy
-- torch
-- torchvision
+- tensorflow
+- keras
 - matplotlib
 - PIL
 
@@ -47,4 +47,4 @@ Python 3
 - `Image Classifier Project.ipynb.py`: Jupyter Notebook File containing the whole code
 - `train.py`: contains functionality to retrain model for a dataset of your choice
 - `predict.py`: contains functionality to classify an image
-- `cat_to_name.json`: contains the mapping between image categories and their real name
+- `cat_to_name.json`: contains the mapping between image categories, and their real name
