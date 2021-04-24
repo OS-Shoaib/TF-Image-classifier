@@ -40,10 +40,14 @@ def predict(img_path, f_model, f_top_k=5):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--image_path')
-    parser.add_argument('--model_path')
-    parser.add_argument('--top_k', type=int)
-    parser.add_argument('--category_names')
+    parser.add_argument('--image_path', default='./test_images/hard-leaved_pocket_orchid.jpg', nargs='*',
+                        action="store", type=str, metavar='', help="Define the directory for the Image")
+    parser.add_argument('--model_path', default='model.h5', nargs='*',
+                        action="store", type=str, metavar='', help="Define the directory to the h5 file")
+    parser.add_argument('--top_k', default=5, dest="top_k", action="store", type=int,
+                        metavar='', help="To show the top_k Prediction")
+    parser.add_argument('--category_names', dest="category_names", action="store", default='cat_to_name.json',
+                        metavar='', help="Define The category name")
 
     args = parser.parse_args()
 
